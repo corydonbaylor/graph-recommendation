@@ -102,3 +102,12 @@ driver.close()
 ```
 
 Just simply import `neo4j` , create your driver, and submit your query! And with that, you have all the power of graph databases right in your python application. 
+
+---
+
+**In this github repo, you will find:**
+
+- A `set_updatabases` folder: if you run the sql and cypher code in Neo4j and Postgress you will set up identical databases (against which you can run the aforementioned queries)
+- A `queries` folder: this simply has some queries to run against the set up databases.
+- An `images` folder: this houses an image found in this readme.
+- An `app` folder: this contains a simple flask app that returns book recommendations given a user's name
