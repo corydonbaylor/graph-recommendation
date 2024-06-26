@@ -21,7 +21,7 @@ return rec.name as title, count(*) as count
 order by count desc
 ```
 
-Here, you write the query in the same way you might on a whiteboard. The logic is defined by nodes and their relationships to one another, making development a breeze.
+Here, you express the query naturally, focusing on nodes and their relationships, which makes development a breeze.
 
 **Let's compare that to SQL:**
 
@@ -55,13 +55,13 @@ order by count desc;
 
 ```
 
-Above we have a confusing mess of self referential subqueries and expensive and time consuming joins. Not only is this much harder to write, it can be considerably slower. 
+The SQL query involves complex subqueries and joins, which are harder to write and can be considerably slower.
 
 Simplified development enable faster and higher-quality product launches.
 
 ### Built for Speed
 
-According to [internal speed tests](https://Neo4j.com/news/how-much-faster-is-a-graph-database-really/), a simple friends of friends query is ***60% faster*** in Neo4j than in MySQL. The more degrees of separation between the starting and ending point expontially grows the execution time.
+According to [internal speed tests](https://Neo4j.com/news/how-much-faster-is-a-graph-database-really/), a simple friends of friends query is ***60% faster*** in Neo4j than in MySQL. As the number of degrees of separation between starting and ending points increases, execution time grows exponentially.
 
 | Depth | Execution Time – MySQL | Execution Time –Neo4j |
 | ----- | ---------------------- | --------------------- |
@@ -101,13 +101,12 @@ with driver.session() as session:
 driver.close()
 ```
 
-Just simply import `neo4j` , create your driver, and submit your query! And with that, you have all the power of graph databases right in your python application. 
+Simply import `neo4j`, establish your driver, and execute your query directly from Python, harnessing the power of graph databases in your application.
 
 ---
 
-**In this github repo, you will find:**
-
-- A `set_updatabases` folder: if you run the sql and cypher code in Neo4j and Postgress you will set up identical databases (against which you can run the aforementioned queries)
-- A `queries` folder: this simply has some queries to run against the set up databases.
-- An `images` folder: this houses an image found in this readme.
-- An `app` folder: this contains a simple flask app that returns book recommendations given a user's name
+- **GitHub Repository Contents:**
+  - **`set_updatabases` folder:** Provides scripts to set up identical databases in Neo4j and PostgreSQL for running the queries mentioned.
+  - **`queries` folder:** Contains sample queries to execute against the prepared databases.
+  - **`images` folder:** Houses images used in this readme.
+  - **`app` folder:** Includes a basic Flask application that returns book recommendations based on a user's name.
