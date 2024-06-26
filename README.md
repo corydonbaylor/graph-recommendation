@@ -74,7 +74,7 @@ Faster query execution generates more sales and more revenue.
 
 ### Easy to Intergrate
 
-Using Neo4j in your existing stack is simple. Let's take a look how in python:
+Using Neo4j in your existing stack is simple. Let's take a look at how in python:
 
 ```python
 from neo4j import GraphDatabase
