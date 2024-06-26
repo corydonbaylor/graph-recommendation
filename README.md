@@ -61,7 +61,7 @@ Simplified development enable faster and higher-quality product launches.
 
 ### Built for Speed
 
-According to [internal speed tests](https://Neo4j.com/news/how-much-faster-is-a-graph-database-really/), a simple friends of friends query is ***60% faster*** in Neo4j than in MySQL. The more degrees of separation between the starting and ending point expontially grows the execution time.
+According to [internal speed tests](https://Neo4j.com/news/how-much-faster-is-a-graph-database-really/), a simple friends of friends query is ***60% faster*** in Neo4j than in MySQL. As the number of degrees of separation between the starting and ending points increases, the execution time grows exponentially.
 
 | Depth | Execution Time – MySQL | Execution Time –Neo4j |
 | ----- | ---------------------- | --------------------- |
